@@ -24,6 +24,7 @@ class Member {
     }
 	
 	static mapping = {
+		table 'members'
 		cache true
 	}
 }

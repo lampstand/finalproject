@@ -30,9 +30,11 @@ grails.project.dependency.resolution = {
 	log "info"
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
+	
 	def gebVersion = "0.9.2"
 	def seleniumVersion = "2.39.0"
-    repositories {
+    
+	repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
         grailsPlugins()
@@ -51,6 +53,7 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.24'
+		runtime 'postgresql:postgresql:8.4-702.jdbc3'
 		test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
 		test("org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion")
 		  test("org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion")
@@ -85,5 +88,9 @@ grails.project.dependency.resolution = {
         //runtime ":zipped-resources:1.0.1"
         //runtime ":cached-resources:1.1"
         //runtime ":yui-minify-resources:0.1.5"
+		compile ':heroku:1.0.1'
+		compile ':cloud-support:1.0.8'
+		runtime ':console:1.2'
+	   
     }
 }
