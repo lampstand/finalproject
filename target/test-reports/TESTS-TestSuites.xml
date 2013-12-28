@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="0" name="AttendanceSpec" package="" tests="3" time="5.497" timestamp="2013-12-28T03:31:43">
+      <properties />
+
+      <testcase classname="AttendanceSpec" name="User Login" time="1.836" />
+
+      <testcase classname="AttendanceSpec" name="Creating New Attendance" time="2.492" />
+
+      <testcase classname="AttendanceSpec" name="Edit Attendance" time="0.882">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: attendanceRow - AttendanceRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: attendanceRow - AttendanceRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at AttendanceSpec.Edit Attendance(AttendanceSpec.groovy:45)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="1" name="GuestSpec" package="" tests="3" time="3.872" timestamp="2013-12-28T03:31:54">
+      <properties />
+
+      <testcase classname="GuestSpec" name="User Login" time="1.563" />
+
+      <testcase classname="GuestSpec" name="Create New Guest" time="0.85" />
+
+      <testcase classname="GuestSpec" name="Show Member" time="0.768">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;cell - SimplePageContent (owner: guestRow - GuestRow (owner: ListPage, args: [0], value: null), args: [0], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;cell - SimplePageContent (owner: guestRow - GuestRow (owner: ListPage, args: [0], value: null), args: [0], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.methodMissing(NavigableSupport.groovy:121)
+	at geb.content.PageContentTemplateFactoryDelegate.methodMissing(PageContentTemplateFactoryDelegate.groovy:34)
+	at pages.guest.GuestRow._clinit__closure1_closure5(ListPage.groovy:29)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:97)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at GuestSpec.Show Member(GuestSpec.groovy:41)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Create New Guest--
+--Output from Show Member--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Create New Guest--
+--Output from Show Member--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="2" name="MemberSpec" package="" tests="3" time="5.237" timestamp="2013-12-28T03:31:48">
+      <properties />
+
+      <testcase classname="MemberSpec" name="User Login" time="1.614" />
+
+      <testcase classname="MemberSpec" name="Create New Member" time="2.48" />
+
+      <testcase classname="MemberSpec" name="Show Member" time="0.812">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: memberRow - MemberRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: memberRow - MemberRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at MemberSpec.Show Member(MemberSpec.groovy:45)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Abankwah" id="3" name="TitheSpec" package="" tests="1" time="1.539" timestamp="2013-12-28T03:31:58">
+      <properties />
+
+      <testcase classname="TitheSpec" name="there are no people" time="1.528" />
+
+      <system-out><![CDATA[--Output from there are no people--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from there are no people--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="4" name="AttendanceSpec" package="" tests="3" time="43.882" timestamp="2013-12-28T03:30:38">
+      <properties />
+
+      <testcase classname="AttendanceSpec" name="User Login" time="32.427" />
+
+      <testcase classname="AttendanceSpec" name="Creating New Attendance" time="9.791" />
+
+      <testcase classname="AttendanceSpec" name="Edit Attendance" time="1.354">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: attendanceRow - AttendanceRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: attendanceRow - AttendanceRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at AttendanceSpec.Edit Attendance(AttendanceSpec.groovy:45)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="5" name="GuestSpec" package="" tests="3" time="9.552" timestamp="2013-12-28T03:31:30">
+      <properties />
+
+      <testcase classname="GuestSpec" name="User Login" time="1.732" />
+
+      <testcase classname="GuestSpec" name="Create New Guest" time="6.577" />
+
+      <testcase classname="GuestSpec" name="Show Member" time="0.694">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;cell - SimplePageContent (owner: guestRow - GuestRow (owner: ListPage, args: [0], value: null), args: [0], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;cell - SimplePageContent (owner: guestRow - GuestRow (owner: ListPage, args: [0], value: null), args: [0], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.methodMissing(NavigableSupport.groovy:121)
+	at geb.content.PageContentTemplateFactoryDelegate.methodMissing(PageContentTemplateFactoryDelegate.groovy:34)
+	at pages.guest.GuestRow._clinit__closure1_closure5(ListPage.groovy:29)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:97)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at GuestSpec.Show Member(GuestSpec.groovy:41)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Create New Guest--
+--Output from Show Member--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Create New Guest--
+--Output from Show Member--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Abankwah" id="6" name="MemberSpec" package="" tests="3" time="7.64" timestamp="2013-12-28T03:31:22">
+      <properties />
+
+      <testcase classname="MemberSpec" name="User Login" time="1.602" />
+
+      <testcase classname="MemberSpec" name="Create New Member" time="4.574" />
+
+      <testcase classname="MemberSpec" name="Show Member" time="1.039">
+          <failure message="geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: memberRow - MemberRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: geb.error.RequiredPageContentNotPresent: The required page content &apos;showLink - SimplePageContent (owner: memberRow - MemberRow (owner: ListPage, args: [0], value: null), args: [], value: null)&apos; is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:82)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.NavigableSupport.getContent(NavigableSupport.groovy:45)
+	at geb.content.NavigableSupport.propertyMissing(NavigableSupport.groovy:129)
+	at MemberSpec.Show Member(MemberSpec.groovy:45)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Abankwah" id="7" name="TitheSpec" package="" tests="1" time="1.792" timestamp="2013-12-28T03:31:39">
+      <properties />
+
+      <testcase classname="TitheSpec" name="there are no people" time="1.782" />
+
+      <system-out><![CDATA[--Output from there are no people--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from there are no people--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
