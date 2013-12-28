@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Abankwah" name="AttendanceSpec" tests="3" time="42.848" timestamp="2013-12-28T05:38:56">
+  <properties />
+  <testcase classname="AttendanceSpec" name="User Login" time="4.179" />
+  <testcase classname="AttendanceSpec" name="Creating New Attendance" time="33.647" />
+  <testcase classname="AttendanceSpec" name="Edit Attendance" time="4.654" />
+  <system-out><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-out>
+  <system-err><![CDATA[--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+]]></system-err>
+</testsuite>

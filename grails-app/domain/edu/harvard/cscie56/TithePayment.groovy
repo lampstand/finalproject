@@ -11,6 +11,6 @@ class TithePayment {
     }
 	
 	static mapping = {
-		version false
+		cache true
 	}
 }

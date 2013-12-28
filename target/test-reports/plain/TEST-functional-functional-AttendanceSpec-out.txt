@@ -1,0 +1,3 @@
+--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--

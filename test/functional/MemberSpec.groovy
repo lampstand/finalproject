@@ -8,18 +8,7 @@ import pages.member.CreatePage
 import pages.member.EditPage
 @Stepwise
 class MemberSpec extends GebReportingSpec{
-	def "User Login"() {
-		given:
-		to LoginPage
-		
-		when: 'I login in'
-		loginForm.j_username = "admin"
-		loginForm.j_password = "password"
-		loginButton.click()
-		
-		then:
-		$().text().contains("CSCIE56 Final Project 2013")
-		
+
 	}
 	
 	def 'Create New Member'(){
@@ -42,7 +31,6 @@ class MemberSpec extends GebReportingSpec{
 		at ListPage
 		def row = memberRow(0)
 		row.phone == '347-967-7223'
-		memberRow(0).showLink.click()
 		then:
 		
 		to CreatePage

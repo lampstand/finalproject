@@ -1,0 +1,16 @@
+Testsuite: MemberSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 15.142 sec
+------------- Standard Output ---------------
+--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+------------- ---------------- ---------------
+
+Testcase: User Login took 2.878 sec
+Testcase: Create New Member took 8.812 sec
+Testcase: Show Member took 2.202 sec

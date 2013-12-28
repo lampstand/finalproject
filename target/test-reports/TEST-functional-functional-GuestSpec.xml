@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Abankwah" name="GuestSpec" tests="2" time="7.732" timestamp="2013-12-28T05:39:54">
+  <properties />
+  <testcase classname="GuestSpec" name="User Login" time="4.646" />
+  <testcase classname="GuestSpec" name="List Guest" time="1.597" />
+  <system-out><![CDATA[--Output from User Login--
+--Output from List Guest--
+]]></system-out>
+  <system-err><![CDATA[--Output from User Login--
+--Output from List Guest--
+]]></system-err>
+</testsuite>

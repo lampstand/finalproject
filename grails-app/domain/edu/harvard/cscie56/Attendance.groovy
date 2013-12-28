@@ -16,6 +16,7 @@ class Attendance {
     }
 	
 	static mapping = {
+		cache true
 		serviceDate column: 'serviceDate', index: 'servicedate_Idx'
 	}
 	

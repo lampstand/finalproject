@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Abankwah" name="TitheSpec" tests="1" time="3.482" timestamp="2013-12-28T05:40:02">
+  <properties />
+  <testcase classname="TitheSpec" name="there are no people" time="3.38" />
+  <system-out><![CDATA[--Output from there are no people--
+]]></system-out>
+  <system-err><![CDATA[--Output from there are no people--
+]]></system-err>
+</testsuite>

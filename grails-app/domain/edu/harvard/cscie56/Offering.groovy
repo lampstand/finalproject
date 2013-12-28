@@ -10,7 +10,7 @@ class Offering {
 	
     static constraints = {
     }
-    static mapping = {
-        version false
-    }
+	static mapping = {
+		cache true
+	}
 }

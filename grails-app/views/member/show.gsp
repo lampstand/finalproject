@@ -13,158 +13,92 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<h1>Profile for
-			<g:if test="${memberInstance?.fullname}">
-			<span class="property-value" aria-labelledby="guestStatus-label"><g:fieldValue bean="${memberInstance}" field="fullname"/></span>
+			<g:if test="${membersInstance?.fullname}">
+			<span class="property-value" aria-labelledby="guestStatus-label"><g:fieldValue bean="${membersInstance}" field="fullname"/></span>
 					
 				</g:if>
 			</h1>
 
 			<ol class="property-list guest">
 			
-				<g:if test="${memberInstance?.gender}">
+				<g:if test="${membersInstance?.gender}">
 				<li class="fieldcontain">
 					<span id="guestStatus-label" class="property-label"><g:message code="guest.guestStatus.label" default="Gender" />:</span>
 					
-						<span class="property-value" aria-labelledby="guestStatus-label"><g:fieldValue bean="${guestInstance}" field="gender"/></span>
+						<span class="property-value" aria-labelledby="guestStatus-label"><g:fieldValue bean="${membersInstance}" field="gender"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${memberInstance?.agegroup}">
+				<g:if test="${membersInstance?.agegroup}">
 				<li class="fieldcontain">
 					<span id="homePhone-label" class="property-label"><g:message code="guest.homePhone.label" default="Age Group" />:</span>
 					
-						<span class="property-value" aria-labelledby="homePhone-label"><g:fieldValue bean="${memberInstance}" field="agegroup"/></span>
+						<span class="property-value" aria-labelledby="homePhone-label"><g:fieldValue bean="${membersInstance}" field="agegroup"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${memberInstance?.address}">
+				<g:if test="${membersInstance?.address}">
 				<li class="fieldcontain">
 					<span id="mobilePhone-label" class="property-label"><g:message code="guest.mobilePhone.label" default="Address" />:</span>
 					
-						<span class="property-value" aria-labelledby="mobilePhone-label"><g:fieldValue bean="${memberInstance}" field="address"/>&nbsp;<g:fieldValue bean="${memberInstance}" field="address1"/></span>
+						<span class="property-value" aria-labelledby="mobilePhone-label"><g:fieldValue bean="${membersInstance}" field="address"/>&nbsp;<g:fieldValue bean="${memberInstance}" field="address1"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${memberInstance?.city}">
+				<g:if test="${membersInstance?.city}">
 				<li class="fieldcontain">
 					<span id="email-label" class="property-label"><g:message code="guest.email.label" default="City" />:</span>
 					
-						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${guestInstance}" field="email"/></span>
+						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${membersInstance}" field="city"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${guestInstance?.address}">
+				<g:if test="${membersInstance?.state}">
 				<li class="fieldcontain">
-					<span id="address-label" class="property-label"><g:message code="guest.address.label" default="Address" /></span>
+					<span id="address-label" class="property-label"><g:message code="guest.address.label" default="State" /></span>
 					
-						<span class="property-value" aria-labelledby="address-label"><g:fieldValue bean="${guestInstance}" field="address"/></span>
+						<span class="property-value" aria-labelledby="address-label"><g:fieldValue bean="${membersInstance}" field="state"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${guestInstance?.address1}">
+				<g:if test="${memberInstance?.zip}">
 				<li class="fieldcontain">
-					<span id="address1-label" class="property-label"><g:message code="guest.address1.label" default="Address1" /></span>
+					<span id="address1-label" class="property-label"><g:message code="guest.address1.label" default="Zip Code:" /></span>
 					
-						<span class="property-value" aria-labelledby="address1-label"><g:fieldValue bean="${guestInstance}" field="address1"/></span>
+						<span class="property-value" aria-labelledby="address1-label"><g:fieldValue bean="${membersInstance}" field="zip"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${guestInstance?.ageGroup}">
+				<g:if test="${membersInstance?.phone}">
 				<li class="fieldcontain">
-					<span id="ageGroup-label" class="property-label"><g:message code="guest.ageGroup.label" default="Age Group" /></span>
+					<span id="ageGroup-label" class="property-label"><g:message code="guest.ageGroup.label" default="Phone Number" /></span>
 					
-						<span class="property-value" aria-labelledby="ageGroup-label"><g:fieldValue bean="${guestInstance}" field="ageGroup"/></span>
+						<span class="property-value" aria-labelledby="ageGroup-label"><g:fieldValue bean="${membersInstance}" field="phone"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${guestInstance?.attendance}">
+				<g:if test="${membersInstance?.email}">
 				<li class="fieldcontain">
-					<span id="attendance-label" class="property-label"><g:message code="guest.attendance.label" default="Attendance" /></span>
+					<span id="attendance-label" class="property-label"><g:message code="guest.attendance.label" default="Email Address:" /></span>
 					
-						<span class="property-value" aria-labelledby="attendance-label"><g:link controller="attendance" action="show" id="${guestInstance?.attendance?.id}">${guestInstance?.attendance?.service?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${guestInstance?.city}">
-				<li class="fieldcontain">
-					<span id="city-label" class="property-label"><g:message code="guest.city.label" default="City" /></span>
-					
-						<span class="property-value" aria-labelledby="city-label"><g:fieldValue bean="${guestInstance}" field="city"/></span>
+						<span class="property-value" aria-labelledby="attendance-label">${membersInstance?.email?.encodeAsHTML()}</span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${guestInstance?.comments}">
-				<li class="fieldcontain">
-					<span id="comments-label" class="property-label"><g:message code="guest.comments.label" default="Comments" /></span>
-					
-						<span class="property-value" aria-labelledby="comments-label"><g:fieldValue bean="${guestInstance}" field="comments"/></span>
-					
-				</li>
-				</g:if>
-
 			
-				<g:if test="${guestInstance?.gender}">
-				<li class="fieldcontain">
-					<span id="gender-label" class="property-label"><g:message code="guest.gender.label" default="Gender" /></span>
-					
-						<span class="property-value" aria-labelledby="gender-label"><g:fieldValue bean="${guestInstance}" field="gender"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${guestInstance?.maritalStatus}">
-				<li class="fieldcontain">
-					<span id="maritalStatus-label" class="property-label"><g:message code="guest.maritalStatus.label" default="Marital Status" /></span>
-					
-						<span class="property-value" aria-labelledby="maritalStatus-label"><g:fieldValue bean="${guestInstance}" field="maritalStatus"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${guestInstance?.name}">
-				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="guest.name.label" default="Name" /></span>
-					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${guestInstance}" field="name"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${guestInstance?.state}">
-				<li class="fieldcontain">
-					<span id="state-label" class="property-label"><g:message code="guest.state.label" default="State" /></span>
-					
-						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${guestInstance}" field="state"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${guestInstance?.zip}">
-				<li class="fieldcontain">
-					<span id="zip-label" class="property-label"><g:message code="guest.zip.label" default="Zip" /></span>
-					
-						<span class="property-value" aria-labelledby="zip-label"><g:fieldValue bean="${guestInstance}" field="zip"/></span>
-					
-				</li>
-				</g:if>
-			
-			</ol>
-			<g:form url="[resource:guestInstance, action:'delete']" method="DELETE">
-				<fieldset class="buttons">
+			</ol><fieldset class="buttons">
 					<g:link class="edit" action="edit" resource="${guestInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-				</fieldset>
-			</g:form>
-		</div>
+					</fieldset>
+				
+				</div>
 
 	</body>
 </html>

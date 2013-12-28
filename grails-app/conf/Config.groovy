@@ -211,3 +211,4 @@ grails.plugins.springsecurity.rejectIfNoRule = true
 grails.validateable.classes = [edu.harvard.cscie56.Attendance]
 grails.plugin.springsecurity.ui.password.validationRegex= '^.*(?=.*\\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&/*+_-=]).*$'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/member/index'
+grails.plugin.springsecurity.logout.postOnly = false

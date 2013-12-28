@@ -1,0 +1,10 @@
+Testsuite: TitheSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 3.482 sec
+------------- Standard Output ---------------
+--Output from there are no people--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from there are no people--
+------------- ---------------- ---------------
+
+Testcase: there are no people took 3.38 sec

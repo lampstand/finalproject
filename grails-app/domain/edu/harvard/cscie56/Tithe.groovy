@@ -7,4 +7,7 @@ class Tithe {
     static constraints = {
 		member unique: true
     }
+	static mapping = {
+		cache true
+	}
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Abankwah" name="MemberSpec" tests="3" time="64.143" timestamp="2013-12-28T05:37:30">
+  <properties />
+  <testcase classname="MemberSpec" name="User Login" time="46.723" />
+  <testcase classname="MemberSpec" name="Create New Member" time="12.469" />
+  <testcase classname="MemberSpec" name="Show Member" time="3.957" />
+  <system-out><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-out>
+  <system-err><![CDATA[--Output from User Login--
+--Output from Create New Member--
+--Output from Show Member--
+]]></system-err>
+</testsuite>

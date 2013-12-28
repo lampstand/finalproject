@@ -121,6 +121,7 @@
 				</div>
 				
 		<div class="container">
+		<div class="gap_50"></div>
 		<g:layoutBody/>
 		</div>
 		

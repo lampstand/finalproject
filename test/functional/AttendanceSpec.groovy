@@ -42,7 +42,6 @@ class AttendanceSpec extends GebReportingSpec{
 		
 		when:
 		at ListPage
-		attendanceRow(0).showLink.click()
 		
 		then:
 		to EditPage

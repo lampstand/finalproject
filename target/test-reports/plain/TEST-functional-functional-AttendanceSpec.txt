@@ -1,0 +1,16 @@
+Testsuite: AttendanceSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 42.848 sec
+------------- Standard Output ---------------
+--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from User Login--
+--Output from Creating New Attendance--
+--Output from Edit Attendance--
+------------- ---------------- ---------------
+
+Testcase: User Login took 4.179 sec
+Testcase: Creating New Attendance took 33.647 sec
+Testcase: Edit Attendance took 4.654 sec
